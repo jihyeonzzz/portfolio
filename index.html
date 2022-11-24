@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+
+    <!-- 파비콘 -->
+    <link href="./image/favicon.ico" rel="shortcut icon" type="image/x-icon">
+
+    <!-- 구글아이콘 -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+
+    <!-- 초기화 -->
+    <link href="./css/reset.css" rel="stylesheet" type="text/css">
+    <!-- 레이아웃 서식 -->
+    <link href="./css/layout.css" rel="stylesheet" type="text/css">
+    <!-- 메인 서식 -->
+    <link href="./css/main.css" rel="stylesheet" type="text/css">
+
+    <!-- 접두사 자동으로 붙여주는 소스 -->
+    <script src="./script/prefixfree.min.js"></script>
+    <!-- 부드러운 애니메이션 스크립트 소스 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollToPlugin.min.js"></script>
+    <!-- 스크롤 매직 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+    <!-- 제이쿼리 라이브러리 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <!-- 제이쿼리 ui -->
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <!-- 메인 자바스크립트 -->
+    <script src="./script/main.js" defer></script>
+
+</head>
+<body>
+    <!-- 헤더영역 -->
+    <header>
+        <div class="h_main">
+            <div class="visual">
+                <div class="t_inner">
+                    <div class="t_bg">
+                        <p class="title">p o r t f o l i o</p>
+                    </div>
+                </div>
+                <p>안녕하세요. 지현정입니다 :)</p>
+            </div>
+            <div class="scroll">
+                <span class="material-icons">mouse</span>
+                <span>scroll</span>
+            </div>
+        </div>
+    </header>
+
+    <nav class="gnb">
+        <div class="inner">
+            <h2>logo</h2>
+            <ul>
+                <li><a href="#" title="프로필">about</a></li>
+                <li><a href="#" title="포트폴리오">portfolio</a></li>
+                <li><a href="#" title="퍼블리싱">publishing</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 메인영역 -->
+    <main>
+        <section class="about">
+            <h2>about</h2>
+            <article>
+                <div class="profile">
+                    <div class="p_img"></div>
+                    <h3>지현정 Ji Hyeonjeong</h3>
+                    <p class="birth">2004.09.09</p>
+                    <p class="email"><span class="material-icons">mail</span>hyeon8346@naver.com</p>
+                    <p class="call"><span class="material-icons">call</span>010-4148-3630</p>
+                </div>
+
+                <div class="introduce">
+                    <p>"<span class="t01">신중히</span> <span class="t02">침착하게</span><br>생각해내는 <span class="t03">퍼블리셔</span>"</p>
+                    <div class="education">
+                        <h3>education</h3>
+                        <p>2022.08 &#x007E; 2022.11 - 그린컴퓨터아트학원</p>
+                        <p>2020.03 &#x007E; 2023.01 - 경민IT고등학교 디자인과</p>
+                    </div>
+
+                    <div class="license">
+                        <h3>license</h3>
+                        <P>2020.08 - GTQ(그래픽기술자격) 1급</P>
+                        <P>2022.07 - 컴퓨터그래픽스운용기능사</P>
+                    </div>
+
+                    <div class="hobby">
+                        <h3>hobby</h3>
+                        <P>음악감상, 그림</P>
+                    </div>
+
+                    <div class="skill">
+                        <h3>skill</h3>
+                        <div class="s_inner">
+                            <p>HTML</p>
+                            <div class="s_box">
+                                <div class="s_gauge html"></div>
+                            </div>
+                            <span id="percent"></span>
+                        </div>
+
+                        <div class="s_inner">
+                            <p>CSS</p>
+                            <div class="s_box">
+                                <div class="s_gauge css"></div>
+                            </div>
+                            <span id="percent"></span>
+                        </div>
+
+                        <div class="s_inner">
+                            <p>JavaScript</p>
+                            <div class="s_box">
+                                <div class="s_gauge java"></div>
+                            </div>
+                            <span id="percent"></span>
+                        </div>
+
+                        <div class="s_inner">
+                            <p>Photoshop</p>
+                            <div class="s_box">
+                                <div class="s_gauge photo"></div>
+                            </div>
+                            <span id="percent"></span>
+                        </div>
+
+                        <div class="s_inner">
+                            <p>Illustrator</p>
+                            <div class="s_box">
+                                <div class="s_gauge illust"></div>
+                            </div>
+                            <span id="percent"></span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section class="portfolio">
+            <h2>portfolio</h2>
+            <article class="project p01">
+                <h3>01. Krispykreme <img src="./image/k_logo.png" alt="크리스피크림 로고"></h3>
+                <div class="p_img">
+                    <img src="./image/mockup_02.png" alt="다우니 사이트 이미지">
+                </div>
+                <div class="bg"></div>
+                <div class="p_txt">
+                    <div class="text">
+                        <p>반응형 홈페이지</p>
+                        <p>롯데그룹이 운영하는 도넛 브랜드인 크리스피크림 도넛을 반응형 웹페이지로 만들었습니다. 부족한 컨텐츠를 추가하며 크리스피크림 도넛의 색을 더 잘보이도록 리디자인 해보았습니다.</p>
+                        <p>기여도 - 개인작업 / 100%</p>
+                        <p>TOOL - HTML5, CSS3, JavaScript, JQuery</p>
+                        <p>FONT - Noto Sana KR</p>
+                        <p>COLOR - <span class="color c_01"></span> <span class="c_txt ct_1">Main</span><span class="color c_02"></span><span class="color c_03"></span><span class="color c_04"></span> <span class="c_txt ct_2">Sub</span></p>
+                    </div>
+                    <a href="#" title="site" class="btn btn01">site</a>
+                    <a href="#" title="pdf" class="btn btn02">pdf</a>
+                </div>
+            </article>
+
+            <article class="project p02">
+                <h3>02. Downy <img src="./image/d_logo.png" alt="다우니 로고"></h3>
+                <div class="p_img">
+                    <img src="./image/mockup_02.jpg" alt="다우니 사이트 이미지">
+                </div>
+                <div class="bg"></div>
+                <div class="p_txt">
+                    <div class="text">
+                        <p>PC 웹페이지</p>
+                        <p>P&G 기업의 섬유유연제 브랜드인 다우니를 PC 웹페이지로 만들었습니다. 기존 다우니의 이미지를 유지하며 단점을 보완하는 리디자인을 해보았습니다.</p>
+                        <p>기여도 - 개인작업 / 100%</p>
+                        <p>TOOL - HTML5, CSS3, JavaScript, JQuery</p>
+                        <p>FONT - 나눔 명조, 나눔 고딕</p>
+                        <p>COLOR - <span class="color c_05"></span> <span class="c_txt ct_1">Main</span><span class="color c_06"></span><span class="color c_07"></span><span class="color c_08"></span> <span class="c_txt ct_2">Sub</span></p>
+                    </div>
+                    <a href="https://jihyeonzzz.github.io/dwony/" title="site" class="btn btn01">site</a>
+                    <a href="#" title="pdf" class="btn btn02">pdf</a>
+                </div>
+            </article>
+        </section>
+
+        <section class="publishing">
+            <h2>publishing</h2>
+            <article class="inner">
+                <div class="p_01">
+                    <div class="img"><img src="./image/ssuni.jpg" alt="쑤니 사이트 이미지"></div>
+                    <div class="txt">
+                        <p>SSUNI</p>
+                    </div>
+                </div>
+
+                <div class="p_02">
+                    <div class="img"><img src="./image/heropy.jpg" alt="헤로피커피 사이트 이미지"></div>
+                    <div class="txt">
+                        <p>Heropy Coffee</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <!-- 푸터영역 -->
+    <footer>
+        <div id="top_btn">
+            <span class="material-icons">expand_less</span>
+        </div>
+        <p>본 사이트는 상업적 목적이 아닌 개인 포트폴리오 용도로 만들어졌습니다.</p>
+        <address>Copyright &copy 2022 JIHYEONJEONG All Rights Reserved.</address>
+    </footer>
+    
+    
+    <script>
+        var swiper = new Swiper(".pSlide", { //객체 생성
+        slidesPerView: 3,
+        spaceBetween: 10,
+        loop: true,           //반복회전
+        centeredSlides: true, //1번 슬라이드가 중앙에 배치
+        pagination: {
+          el: ".swiper-pagination", //콘트롤버튼 나오게
+          clickable: true,          //콘트롤버튼 클릭할 수 있음
+        },
+      autoplay: true,        //자동으로 움직임
+      navigation: {          //좌, 우버튼 만들기
+        nextEl: ".promotion .swiper-button-next",
+        prevEl: ".promotion .swiper-button-prev",
+        },
+    });
+    </script>
+
+</body>
+</html>
