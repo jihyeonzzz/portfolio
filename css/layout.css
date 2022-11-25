@@ -82,7 +82,7 @@ header .h_main{
 .h_main .visual > p{
     font-size: 24px;
     text-align: center;
-    transform: translateY(540px);
+    transform: translateY(500px);
 }
 
 /* 메뉴 서식 */
@@ -116,10 +116,20 @@ header .h_main{
     color: #7DE5DF;
 }
 
+.gnb h2{cursor: pointer;}
+.gnb img{
+    height: 50px;
+    padding-top: 15px;
+}
+
 /* 메인 서식 */
-main .about, main .publishing{
+main .about{
     background: #F0F0F0;
     width: 100%; height: 100vh;
+}
+main .training{
+    background: #F0F0F0;
+    width: 100%; height: 80vh;
 }
 main .project{width: 100%; height: 74vh; overflow: hidden;}
 main .portfolio{background: #F0F0F0;}

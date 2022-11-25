@@ -51,8 +51,16 @@ $(document).ready(function(){
 
 // top btn
 const topBtnEl = document.querySelector('#top_btn');
+const logoEl = document.querySelector('#logo');
 
 topBtnEl.addEventListener('click', function(){
+  // alert('eiownviowne');
+  gsap.to(window, .6, { //브라우저를 선택하여 0.6초만에
+    scrollTo: 0 //스크롤 꼭때기 0까지 올라간다.
+  });
+});
+
+logoEl.addEventListener('click', function(){
   // alert('eiownviowne');
   gsap.to(window, .6, { //브라우저를 선택하여 0.6초만에
     scrollTo: 0 //스크롤 꼭때기 0까지 올라간다.
