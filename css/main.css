@@ -172,6 +172,25 @@ main h2{
 }
 .p01 h3{right: 240px;}
 .p02 h3{left: 280px;}
+
+.project .btn{
+    position: absolute;
+    padding: 12px 55px;
+    background: #7DE5DF;
+    margin: 55px 10px;
+    font-size: 16px;
+    text-transform: uppercase;
+    border: 2px solid #7DE5DF;
+    border-radius: 6px;
+    transition: .4s;
+}
+.project .btn02{
+    left: 180px;
+    background: none;
+}
+.project .btn02:hover{background: #7DE5DF;}
+.project .btn01:hover{background: none;}
+
 .project h3 img{
     height: 40px;
     margin-left: 20px;
@@ -206,7 +225,7 @@ main h2{
 .project .p_img{
     position: absolute;
     top: 50%; transform: translateY(-50%);
-    width: 850px; height: 600px;
+    width: 800px; height: 600px;
     z-index: 100;
     opacity: 0;
     border-radius: 20px;
