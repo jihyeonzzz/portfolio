@@ -45,6 +45,9 @@ main h2{
     border-radius: 50%;
     background: #7DE5DF;
     margin-bottom: 30px;
+    background-image: url('../image/IMG_0128.jpg');
+    background-size: 90%;
+    background-position: 12px 0;
 }
 .profile .birth, .profile h3{text-align: center;}
 .profile h3{
@@ -253,28 +256,61 @@ main h2{
 .p01 .p_txt{right: 300px;}
 .p02 .p_txt{left: 300px;}
 
-/* publishing */
-.publishing .inner{
+/* training */
+.training .inner{
     padding-top: 120px;
-    width: 1400px;
+    width: 1300px;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-around;
+    /* display: flex; */
+    /* justify-content: space-around; */
+    /* position: relative; */
 }
 
-.publishing .p_01, .publishing .p_02{display: flex;}
-.publishing .img{
-    width: 350px; height: 500px;
+.training .swiper-slide{
+    height: 300px;
     background: #7DE5DF;
-    overflow: hidden;
 }
-.publishing .img img{
+
+.swiper-button-prev::after, .swiper-button-next::after{display: none;}
+.swiper-button-prev{margin-left: 10px;}
+.swiper-button-next{margin-right: 10px;}
+.training .material-icons{
+    font-size: 30px;
+    color: #7DE5DF;
+    padding: 10px;
+    border: 1px solid #7DE5DF;
+    border-radius: 50%;
+}
+
+.training .swiper-slide img{
     width: 100%;
-    transition: .4s;
-    opacity: .7;
 }
-.publishing .img:hover img{transform: scale(1.05);}
-.publishing .txt{
-    width: 300px; height: 500px;
+.training figcaption{
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 100%; height: 200px;
+    background: rgba(0,0,0,.7);
+    color: #fff;
+    text-align: center;
+    padding: 50px 0;
+    transition: .5s;
+}
+.training figcaption > span{
+    font-size: 20px;
+    font-weight: 700;
+}
+.training .swiper-slide .t_btn{
+    font-size: 20px;
+    position: absolute;
+    top: 250px; left: 50%;
+    transform: translateX(-50%);
+    padding: 20px 40px;
     background: #F0F0F0;
+    border: 1px solid #7DE5DF;
+    box-shadow: 5px 5px 5px rgba(0,0,0,.2);
+    opacity: 0;
+    transition: .5s;
 }
+
+.training .swiper-slide:hover figcaption{bottom: -300px;}
+.training .swiper-slide:hover .t_btn{opacity: 1;}

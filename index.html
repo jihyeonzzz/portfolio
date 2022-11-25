@@ -19,6 +19,8 @@
     <!-- 메인 서식 -->
     <link href="./css/main.css" rel="stylesheet" type="text/css">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+
     <!-- 접두사 자동으로 붙여주는 소스 -->
     <script src="./script/prefixfree.min.js"></script>
     <!-- 부드러운 애니메이션 스크립트 소스 -->
@@ -44,7 +46,7 @@
                         <p class="title">p o r t f o l i o</p>
                     </div>
                 </div>
-                <p>안녕하세요. 지현정입니다 :)</p>
+                <p>안녕하세요. 웹 퍼블리셔 지현정입니다 :)</p>
             </div>
             <div class="scroll">
                 <span class="material-icons">mouse</span>
@@ -55,11 +57,11 @@
 
     <nav class="gnb">
         <div class="inner">
-            <h2>logo</h2>
+            <h2 id="logo"><img src="./image/logo.png" alt="상단로고"></h2>
             <ul>
                 <li><a href="#" title="프로필">about</a></li>
                 <li><a href="#" title="포트폴리오">portfolio</a></li>
-                <li><a href="#" title="퍼블리싱">publishing</a></li>
+                <li><a href="#" title="트레이닝">training</a></li>
             </ul>
         </div>
     </nav>
@@ -159,8 +161,8 @@
                         <p>FONT - Noto Sana KR</p>
                         <p>COLOR - <span class="color c_01"></span> <span class="c_txt ct_1">Main</span><span class="color c_02"></span><span class="color c_03"></span><span class="color c_04"></span> <span class="c_txt ct_2">Sub</span></p>
                     </div>
-                    <a href="#" title="site" class="btn btn01">site</a>
-                    <a href="#" title="pdf" class="btn btn02">pdf</a>
+                    <a href="https://jihyeonzzz.github.io/krispykreme/" title="site" class="btn btn01">site</a>
+                    <a href="./k_pdf.pdf" title="pdf" class="btn btn02">pdf</a>
                 </div>
             </article>
 
@@ -180,25 +182,79 @@
                         <p>COLOR - <span class="color c_05"></span> <span class="c_txt ct_1">Main</span><span class="color c_06"></span><span class="color c_07"></span><span class="color c_08"></span> <span class="c_txt ct_2">Sub</span></p>
                     </div>
                     <a href="https://jihyeonzzz.github.io/dwony/" title="site" class="btn btn01">site</a>
-                    <a href="#" title="pdf" class="btn btn02">pdf</a>
+                    <a href="./d_pdf.pdf" title="pdf" class="btn btn02">pdf</a>
                 </div>
             </article>
         </section>
 
-        <section class="publishing">
-            <h2>publishing</h2>
+        <section class="training">
+            <h2>training</h2>
             <article class="inner">
-                <div class="p_01">
-                    <div class="img"><img src="./image/ssuni.jpg" alt="쑤니 사이트 이미지"></div>
-                    <div class="txt">
-                        <p>SSUNI</p>
+                <div class="swiper tSlide">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="https://jihyeonzzz.github.io/ssuni/" title="트레이닝1">
+                                <figure>
+                                    <img src="./image/training_01.jpg" alt="쑤니 이미지">
+                                    <span class="t_btn">자세히 보기</span>
+                                    <figcaption>
+                                        <span>SSUNI</span>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://jihyeonzzz.github.io/heropycoffee/" title="트레이닝2">
+                                <figure>
+                                    <img src="./image/training_02.jpg" alt="헤로피커피 이미지">
+                                    <span class="t_btn">자세히 보기</span>
+                                    <figcaption>
+                                        <span>Heropy Coffee</span>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://jihyeonzzz.github.io/kully/" title="트레이닝3">
+                                <figure>
+                                    <img src="./image/training_03.jpg" alt="컬리 이미지">
+                                    <span class="t_btn">자세히 보기</span>
+                                    <figcaption>
+                                        <span>Kurly</span>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://jihyeonzzz.github.io/todolist/" title="트레이닝4">
+                                <figure>
+                                    <img src="./image/training_04.jpg" alt="투두리스트 이미지">
+                                    <span class="t_btn">자세히 보기</span>
+                                    <figcaption>
+                                        <span>Todo List</span>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://jihyeonzzz.github.io/movie/" title="트레이닝5">
+                                <figure>
+                                    <img src="./image/training_05.jpg" alt="영화 이미지">
+                                    <span class="t_btn">자세히 보기</span>
+                                    <figcaption>
+                                        <span>Movie</span>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
                     </div>
-                </div>
-
-                <div class="p_02">
-                    <div class="img"><img src="./image/heropy.jpg" alt="헤로피커피 사이트 이미지"></div>
-                    <div class="txt">
-                        <p>Heropy Coffee</p>
+            
+                    <div class="swiper-button-prev">
+                        <span class="material-icons">arrow_back</span>
+                    </div>
+                    
+                    <div class="swiper-button-next">
+                        <span class="material-icons">arrow_forward</span>
                     </div>
                 </div>
             </article>
@@ -215,20 +271,17 @@
     </footer>
     
     
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script>
-        var swiper = new Swiper(".pSlide", { //객체 생성
+        var swiper = new Swiper(".tSlide", { //객체 생성
         slidesPerView: 3,
         spaceBetween: 10,
         loop: true,           //반복회전
         centeredSlides: true, //1번 슬라이드가 중앙에 배치
-        pagination: {
-          el: ".swiper-pagination", //콘트롤버튼 나오게
-          clickable: true,          //콘트롤버튼 클릭할 수 있음
-        },
-      autoplay: true,        //자동으로 움직임
+    //   autoplay: true,        //자동으로 움직임
       navigation: {          //좌, 우버튼 만들기
-        nextEl: ".promotion .swiper-button-next",
-        prevEl: ".promotion .swiper-button-prev",
+        nextEl: ".training .swiper-button-next",
+        prevEl: ".training .swiper-button-prev",
         },
     });
     </script>
